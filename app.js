@@ -54,7 +54,7 @@ app.post('/loadCalc', async (req, res) => {
   .then(res.status(201).end())
 })
 */
-app.put('/saveCalc', async (req, res) => {
+app.put('/api/saveCalc', async (req, res) => {
   console.log(req.body)
 
   
@@ -74,7 +74,7 @@ app.put('/saveCalc', async (req, res) => {
 
 })
 
-app.get('/loadCalc', function(req, res) {
+app.get('/api/loadCalc', function(req, res) {
   console.log('why')
   Calc.find({})
   .then(results => {
